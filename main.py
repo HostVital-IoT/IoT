@@ -10,7 +10,7 @@ app=Flask(__name__)
 api=Api(app)
 CORS(app)
 
-api.add_resource(Patient, '/new_patient/', '/<string:by>:<string:data>/')
+api.add_resource(Patient, '/new/', '/<string:by>:<string:data>/')
 api.add_resource(Patients, '/all')
 
 if __name__ == '__main__':
